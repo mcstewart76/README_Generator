@@ -74,10 +74,12 @@ const questions = [
 
 var fs = require('fs');
 var inquirer = require('inquirer');
+
 inquirer
   .prompt(questions)
   .then((data) => {
       console.log(data.description);
+      return generator(data);
       //console.log(data.projectName)
       // const dataset = (JSON.stringify(answers, null, '  '));
       // console.log(dataset);
@@ -86,22 +88,52 @@ inquirer
   })
   .catch((error) => {
     if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
+      "Prompt couldn't be rendered in the current environment"
     } else {
-      // Something else went wrong
+       "Something else went wrong"
     }
   });
   // console.log("it is working")
-  
-// fs.appendFile('README.md',
-//  `
-//  Hello this is a test readme!
- 
- 
-//  `
-//  , function (err) {
-//     if (err) throw err;
-//     console.log('Saved!');
-//   });
+const generator = data => { 
+fs.appendFile('README.md',
+ `
+ ![GitHub license]
+## Description
+${data.description} \n
+## Table of Contents
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Contributors](#Contributors)
+* [Tests](#Tests)
+* [Questions](#Questions)
+* [Github](#Github)
+* [Email](#Email)
+* [License](#License)
+* [Repo](#Repo)
 
+
+## Installation
+${data.installInstr} \n
+## Usage
+${data.usageInfo} \n
+## Contributing
+${data.contributionGuidelines} \n
+## Tests
+${data.testInstr} \n
+## Questions
+\n
+## Github
+!Check out my GitHub at ${data.github}. \n
+## Email
+!Contact me at ${data.email} if you have additional questions. \n
+## License
+!The license for this repo is covered under ${data.license}. \n
+## Repo
+!You can find a link to the repo at www.github.com/mcstewart76/${data.projectName} .
+ `
+ , function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+};
   
