@@ -97,7 +97,7 @@ inquirer
 const generator = data => { 
 fs.appendFile('README.md',
  `
- ![GitHub license]
+ 
 ## Description
 ${data.description} \n
 ## Table of Contents
