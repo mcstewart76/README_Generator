@@ -1,7 +1,7 @@
 
- ![GitHub license]
+ 
 ## Description
-description 
+A simple readme generator for simple convience 
 
 ## Table of Contents
 * [Installation](#Installation)
@@ -16,29 +16,29 @@ description
 
 
 ## Installation
-fdas 
+install at your own risk 
 
 ## Usage
-fdsa 
+use after install 
 
 ## Contributing
-fdas 
+only contributors who helped will get credit 
 
 ## Tests
-fdsa 
+test after install 
 
 ## Questions
 
 
 ## Github
-!Check out my GitHub at fdsa. 
+!Check out my GitHub at mcstewart76. 
 
 ## Email
-!Contact me at ffff if you have additional questions. 
+!Contact me at mcstewart76@gmail.com if you have additional questions. 
 
 ## License
 !The license for this repo is covered under ISC. 
 
 ## Repo
-!You can find a link to the repo at www.github.com/mcstewart76/Title of project .
+!You can find a link to the repo at www.github.com/mcstewart76/Readme Generator .
  
