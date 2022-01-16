@@ -101,31 +101,31 @@ fs.appendFile('README.md',
 ## Description
 ${data.description} \n
 ## Table of Contents
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [Contributors](#Contributors)
-* [Tests](#Tests)
-* [Questions](#Questions)
-* [Github](#Github)
-* [Email](#Email)
-* [License](#License)
-* [Repo](#Repo)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributors](#contributors)
+* [Tests](#tests)
+* [Questions](#questions)
+* [Github](#github)
+* [Email](#email)
+* [License](#license)
+* [Repo](#repo)
 
 
 ## Installation
 ${data.installInstr} \n
 ## Usage
 ${data.usageInfo} \n
-## Contributing
+## Contributors
 ${data.contributionGuidelines} \n
 ## Tests
 ${data.testInstr} \n
-## Questions
+### Questions
 \n
 ## Github
-!Check out my GitHub at ${data.github}. \n
+[Check out my GitHub at](https://github.com/${data.github}). \n
 ## Email
-!Contact me at ${data.email} if you have additional questions. \n
+Contact me at <a href="MAILTO:${data.email}">${data.email}</a> if you have additional questions. \n
 ## License
 !The license for this repo is covered under ${data.license}. \n
 ## Repo
